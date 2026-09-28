@@ -1,0 +1,24 @@
+{
+  "name": "energy-consumption-system",
+  "version": "1.0.0",
+  "description": "A system for monitoring electrical data in  a household",
+  "homepage": "https://github.com/kisera123/Energy-Consumption-System#readme",
+  "bugs": {
+    "url": "https://github.com/kisera123/Energy-Consumption-System/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kisera123/Energy-Consumption-System.git"
+  },
+  "license": "Apache-2.0",
+  "author": "Kisera123",
+  "type": "commonjs",
+  "main": "src/backend/server.js",
+  "scripts": {
+    "start": "node src/backend/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
