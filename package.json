@@ -1,7 +1,7 @@
 {
   "name": "energy-consumption-system",
   "version": "1.0.0",
-  "description": "A system for monitoring electrical data in  a household",
+  "description": "A household energy monitoring dashboard with a Java API",
   "homepage": "https://github.com/kisera123/Energy-Consumption-System#readme",
   "bugs": {
     "url": "https://github.com/kisera123/Energy-Consumption-System/issues"
@@ -13,12 +13,13 @@
   "license": "Apache-2.0",
   "author": "Kisera123",
   "type": "commonjs",
-  "main": "src/backend/server.js",
+  "main": "src/backend/java/EnergyApiServer.java",
   "scripts": {
-    "start": "node src/backend/server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "javac -d build/classes src/backend/java/EnergyApiServer.java && java -cp build/classes EnergyApiServer",
+    "test": "javac -d build/classes src/backend/java/EnergyApiServer.java",
+    "format": "prettier --write \"src/**/*.{js,html,css}\" --print-width 80"
   },
-  "dependencies": {
-    "express": "^5.2.1"
+  "devDependencies": {
+    "prettier": "^3.9.9"
   }
 }
